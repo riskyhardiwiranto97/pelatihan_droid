@@ -28,15 +28,13 @@ public class MainActivity extends AppCompatActivity {
         int opr = operator.getCheckedRadioButtonId();
 
         if(opr == R.id.plus){
-            hasil=angka1+angka2;
-        } else if(opr == R.id.minus){
-            hasil=angka1-angka2;
-        }
-        if(opr == R.id.kali){
-            hasil=angka1*angka2;
-        } else if(opr == R.id.bagi){
-            hasil=angka1/angka2;
-        }
+            hasil=angka1+angka2;}
+        else if(opr == R.id.minus){
+            hasil=angka1-angka2;}
+        else if(opr == R.id.kali){
+            hasil=angka1*angka2;}
+        else if(opr == R.id.bagi){
+            hasil=angka1/angka2;}
         //lengkapi perkalian dan pembagian
         //menambahkan elemen di layout dan main activity
         //logika kalkulasinya
