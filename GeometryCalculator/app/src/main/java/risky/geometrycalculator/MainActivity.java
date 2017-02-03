@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         inp1 = Double.parseDouble(input1.getText().toString());
         if (input2.isEnabled())
         inp2 = Double.parseDouble(input2.getText().toString());
-        else if (input3.isEnabled())
+        if (input3.isEnabled())
             inp3 = Double.parseDouble(input3.getText().toString());
         if (operator.equalsIgnoreCase("Lingkaran")){
             hasil = "Luas Dari Lingkaran adalah : "+(Math.PI*(inp1*inp1))+"\n";
@@ -46,8 +46,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             double hyp = Math.sqrt((inp1*inp1)+(inp2*inp2));
             hasil += "Keliling Dari Segitiga Siku-siku adalah :"+(inp1+inp2+hyp)+"\n";
         }else if (operator.equalsIgnoreCase("Balok")){
-            hasil = "Luas Dari Balok adalah : "+((2*(inp1*inp2))+(2*(inp1*inp3))+(2*(inp2*inp3)))+"\n";
+            hasil = "Luas Dari Balok adalah : "+(2*(inp1*inp2)+2*(inp1*inp3)+2*(inp2*inp3))+"\n";
             hasil += "Volume Dari Balok adalah :"+(inp1*inp2*inp3)+"\n";
+        }else if (operator.equalsIgnoreCase("Bola")) {
+            hasil = "Volume Dari Bola adalah : " +(4/3*Math.PI*(inp1*inp1*inp1)) + "\n";
+            hasil += "Luas Permukaan Dari Bola adalah :" + (4*Math.PI*(inp1*inp1)) + "\n";
         }else {
             hasil = "Luas Dari Persegi adalah : "+(inp1*inp2)+"\n";
             hasil += "Keliling Dari Persegi adalah : "+((2*inp1)+(2*inp2))+"\n";
@@ -85,11 +88,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             input2.setEnabled(true);
             input3.setEnabled(true);
         }else if (operator.equalsIgnoreCase("Bola")){
-            text1.setText("Panjang");
-            text2.setText("Lebar");
-            text3.setText("Tinggi");
-            input2.setEnabled(true);
-            input3.setEnabled(true);
+            text1.setText("Jari-jari");
+            text2.setText("");
+            text3.setText("");
+            input2.setEnabled(false);
+            input3.setEnabled(false);
         }else {
             text1.setText("Panjang");
             text2.setText("Lebar");
