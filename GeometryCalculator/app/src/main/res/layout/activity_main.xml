@@ -68,16 +68,15 @@
         android:gravity="center_vertical"/>
 
     <Button
-        android:id="@+id/hitung"
-        android:layout_below="@id/input3"
+        android:id="@+id/tampil"
+        android:layout_below="@+id/input3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hitung"
+        android:text="Tampilkan Hasil"
         android:onClick="calculate"/>
-
     <TextView
+        android:layout_below="@id/tampil"
         android:id="@+id/result"
-        android:layout_below="@id/hitung"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </RelativeLayout>
