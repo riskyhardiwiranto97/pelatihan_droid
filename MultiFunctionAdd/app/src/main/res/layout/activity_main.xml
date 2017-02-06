@@ -50,4 +50,12 @@
         android:textStyle="bold"
         android:textColor="@color/colorPrimary"
         android:onClick="openMap"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KIRIMI EMAIL"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:onClick="sendEmail"/>
 </LinearLayout>

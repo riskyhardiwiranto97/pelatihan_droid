@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="risky.tipscalculator.MainActivity">
+
+    <TextView
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/tagihan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tagihan" />
+
+    <EditText
+        android:id="@+id/inp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tagihan"/>
+
+    <TextView
+        android:id="@+id/persen"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Persen Tip            :"
+        android:layout_below="@+id/inp1"/>
+    <EditText
+        android:id="@+id/inp2"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inp1"/>
+    <TextView
+        android:layout_below="@id/inp1"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:text="%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:id="@+id/jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Orang      :"
+        android:layout_below="@+id/inp2"/>
+    <EditText
+        android:id="@+id/inp3"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inp2"/>
+
+    <Button
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:id="@+id/hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HITUNG"
+        android:layout_below="@id/inp3"
+        android:onClick="total"/>
+
+    <TextView
+        android:textSize="30dp"
+        android:id="@+id/hasil"
+        android:layout_below="@id/hitung"
+        android:text="0"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

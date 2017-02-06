@@ -28,6 +28,9 @@ public class IntentExecutor extends AppCompatActivity {
         }else if (operator.equals("Map")){
             btn.setText("Buka Peta");
         }
+        }else if (operator.equals("sendEmail")){
+        btn.setText("Buka Peta");
+        }
     }
     public void execute(View view){
         Intent exeIntent = null;

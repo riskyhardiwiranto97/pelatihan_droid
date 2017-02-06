@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    public final static String EXTRA = "risky.geometrycalculator";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,10 +26,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     public void calculate (View view){
-        Intent intent = new Intent(this, ShowResultActivity.class);
-        TextView txtMessage = (TextView) findViewById(R.id.result);
-        intent.putExtra(EXTRA,txtMessage.getText().toString());
-        startActivity(intent);
         EditText input1 = (EditText) findViewById(R.id.input1);
         EditText input2 = (EditText) findViewById(R.id.input2);
         EditText input3 = (EditText) findViewById(R.id.input3);
