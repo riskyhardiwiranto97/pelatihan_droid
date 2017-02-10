@@ -9,7 +9,25 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="risky.listfilm.MainActivity">
 
+    <TextView
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:id="@+id/txt1"
+        android:text="List Film :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="formtambah"
+        android:textAlignment="center"
+        android:id="@+id/tambah"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:text="+"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/txt1" />
     <ListView
+        android:layout_below="@id/tambah"
         android:id="@+id/listFilm"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
