@@ -44,6 +44,7 @@ public class formTransaksi extends AppCompatActivity {
                                 +" - "+tketerangan);
         Toast.makeText(this, "Transaksi "+tnama+"berhasil disimpan", Toast.LENGTH_SHORT).show();
 
-        startActivity(new Intent(this, MainActivity.class));
+    //    startActivity(new Intent(this, MainActivity.class));
+    finish();
     }
 }
